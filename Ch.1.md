@@ -11,3 +11,10 @@ Ch.1
 
 * use `cargo build --release` to compile it with optimizations (an executable in *target/release*)
 
+
+
+Ch.2
+
+* function return `Ok` / `Err` to apply error handling
+* Like Java, use `.` to do serialized operation
+* Can not avoid dead loop(loop controlled by user)
