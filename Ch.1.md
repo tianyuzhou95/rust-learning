@@ -27,7 +27,7 @@ Ch.3
 
 * Use `mut` to make variables mutable
 * `const` 和 immutable var 还是有区别的，一方面是 `let` 和 `const` 不一样，另一方面是 constant 的 type 必须显式声明，constant 可以在任意位置（scope）被声明，且声明语句也必须是 constant expression
-* Shadow，和 C++ 不同，Rust 可以使用 `let` 重复定义重名变量，此时会将之前的同名变量覆盖掉，但是**否会覆盖掉空间我暂时未知**，理论上在编译时应该会优化
+* Shadow，和 C++ 不同，Rust 可以使用 `let` 重复定义重名变量，此时会将之前的同名变量覆盖掉，被覆盖的变量会被 free(参考[这里](https://stackoverflow.com/questions/48227347/does-rust-free-up-the-memory-of-overwritten-variables))
 * Rust & Integer overflow ([link](https://doc.rust-lang.org/book/ch03-02-data-types.html#integer-overflow))
 * function `fn`
     * `->  <type>` return value claim
